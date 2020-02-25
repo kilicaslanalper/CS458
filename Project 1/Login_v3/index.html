@@ -77,7 +77,6 @@
 			}
 		}
 		if (username == "" || password == "") {
-			window.location.href = 'https://www.google.com';
 			alert ("BILKENT ID AND PASSWORD CANNOT BE EMPTY");
 		} else if (!username.match(/^\s*[+-]?\d+\s*$/) ){
 			alert ("BILKENT ID MUST BE AN INTEGER");
@@ -88,8 +87,8 @@
 		} else if (!check) {
 			alert ("YOUR BILKENT ID OR PASSWORD IS WRONG");
 		} else {
-			alert (window.location.pathname)
-
+			window.location.href = 'https://raw.githubusercontent.com/zenovita/CS458/master/Project%201/Login_v3/images/srs.PNG';
+			alert ("YOU WILL BE REDIRECTED TO SRS PAGE!!")
 		}
 	}
 </script>
