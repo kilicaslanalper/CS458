@@ -36,9 +36,15 @@ def starsLogin(bilkentID, password):
 starsLogin("200000", "Burak")
 
 # Test Case 2
-starsLogin("200000a", "Burak")
+starsLogin("123456", "Burak")
 
 # Test Case 3
+starsLogin("123456", "bur")
+
+# Test Case 4
+starsLogin("", "")
+
+# Test Case 5
 starsLogin("21601296", "123456")
 
 browser.quit()
