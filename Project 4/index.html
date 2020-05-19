@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <h1>
+      Covid Tracker
+    </h1>
+
+    <div style="float: left;">
+      <p>Your Name</p>
+      <input type="text" name="name" id="name" value=""/>
+      <p>Your Age</p>
+      <input type="text" name="age" id="age" value=""/>
+      <p>Your City</p>
+      <input type="text" name="city" id="city" value=""/>
+      <p>Your Job</p>
+      <input type="text" name="job" id="job" value=""/>
+      <input
+        type="button"
+        name="proceed"
+        value="Proceed Info"
+        onclick="saveInformation()"
+      />
+    </div>
+    <div id="card" style="float: left; visibility: hidden;">
+      <div class="card" >
+        <div class="container" style="width: 1000px; height: 350px;">
+          <h1><b name="Name" id="Name"></b></h1>
+          <h2><b name="City" id="City"></b></h2>
+          <h2><b name="Job" id="Job"></b></h2>
+          <h3 name="Month" id="Month"></h3>
+          
+            <div style="float: left;">
+              <h5>Most Common Symptoms</h5>
+              <input type="checkbox" id="m1" name="fever" value="" />
+              <label for="fever"> Fever</label><br />
+              <input type="checkbox" id="m2" name="drycough" value="" />
+              <label for="drycough"> Dry Cough</label><br />
+              <input type="checkbox" id="m3" name="tiredness" value="" />
+              <label for="tiredness"> Tiredness</label><br />
+            </div>
+
+            <div style="float: left; padding-left: 10px;">
+              <h5>Less Common Symptoms</h5>
+              <input type="checkbox" id="l1" name="achesandpains" value="" />
+              <label for="achesandpains"> Achesa and pains</label><br />
+              <input type="checkbox" id="l2" name="sorethroat" value="" />
+              <label for="sorethroat"> Sore Throat</label><br />
+              <input type="checkbox" id="l3" name="diarrhoea" value="" />
+              <label for="diarrhoea"> Diarrhoea</label><br />
+              <input type="checkbox" id="l4" name="conjunctivitis" value="" />
+              <label for="conjunctivitis"> Conjunctivitis</label><br />
+              <input type="checkbox" id="l5" name="headache" value="" />
+              <label for="headache"> Headache</label><br />
+              <input
+                type="checkbox"
+                id="l6"
+                name="lossoftasteorsmell"
+                value=""
+              />
+              <label for="lossoftasteorsmell"> Loss of taste or smell</label
+              ><br />
+              <input type="checkbox" id="l7" name="rashskin" value="" />
+              <label for="rashskin">
+                A rash skin on skin, or discolouration of fingers or toes </label
+              ><br />
+            </div>
+            <div style="float: left; padding-left: 10px;">
+              <h5>Serious Symptoms</h5>
+              <input type="checkbox" id="s1" name="breath" value="" />
+              <label for="breath">
+                Difficulty breathing or shortness of breath</label
+              ><br />
+              <input type="checkbox" id="s2" name="chestpain" value="" />
+              <label for="chestpain"> Chest pain or pressure</label><br />
+              <input type="checkbox" id="s3" name="lossspeach" value="" />
+              <label for="lossspeach"> Loss of speech or movement</label><br />
+            </div>
+          </div>
+          <div
+            style="float: bottom; position: relative; right: 250px; top: 90px;"
+          >
+            <input
+              type="button"
+              name="previousDate"
+              value="Previous Date"
+              onclick="previousDate()"
+            />
+            <input
+              type="button"
+              name="saveSymptoms"
+              value="Save Symptoms"
+              onclick="saveSymptoms()"
+            />
+            <input
+              type="button"
+              name="nextDate"
+              value="Next Date"
+              onclick="nextDate()"
+            />
+          </div>
+          <div
+            id="alert"
+            class="alert"
+            style="
+              visibility: hidden;
+              position: relative;
+              left: 10  0px;
+              top: 200px;
+            "
+          >
+            <span
+              class="closebtn"
+              onclick="this.parentElement.style.display='none';"
+              >&times;</span
+            >
+            This is an alert box.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

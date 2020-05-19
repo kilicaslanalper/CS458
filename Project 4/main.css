@@ -1,0 +1,67 @@
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 500px;
+  width: 1000px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 5px;
+}
+
+/* The alert message box */
+.alertRed {
+  text-align: center;
+  padding: 20px;
+  background-color: red; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+.alertOrange {
+  text-align: center;
+  padding: 20px;
+  background-color: orange; /* Orange */
+  color: white;
+  margin-bottom: 15px;
+}
+
+.alertBlue {
+  text-align: center;
+  padding: 20px;
+  background-color: #4d88ff; /* Blue */
+  color: white;
+  margin-bottom: 15px;
+}
+
+.alertGreen {
+  text-align: center;
+  padding: 20px;
+  background-color: green; /* Green */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}

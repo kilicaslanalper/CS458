@@ -7,10 +7,9 @@ print(os.curdir)
 
 
 def starsLogin(bilkentID, password):
-
     # Address of the stars srs system
     browser.get(
-        "file:///Users/burakkorkmaz/Desktop/4-2/cs%20458/CS458/Project%201/Login_v3/index.html")
+        "file://"+os.getcwd()+"/Login_v3/index.html")
 
     # Typing school number
     browser.find_element_by_xpath(
@@ -28,23 +27,23 @@ def starsLogin(bilkentID, password):
     time.sleep(5)
     try:
         browser.switch_to.alert.accept()
+        return False
     except:
-        pass
-
+        return True
 
 # Test Case 1
-starsLogin("200000", "Burak")
+print("Test case 1 status:" ,starsLogin("200000", "Burak"))
 
 # Test Case 2
-starsLogin("123456", "Burak")
+print("Test case 2 status:" ,starsLogin("123456", "Burak"))
 
 # Test Case 3
-starsLogin("123456", "bur")
+print("Test case 3 status:" ,starsLogin("123456", "bur"))
 
 # Test Case 4
-starsLogin("", "")
+print("Test case 4 status:" ,starsLogin("", ""))
 
 # Test Case 5
-starsLogin("21601296", "123456")
+print("Test case 5 status:" ,starsLogin("21601296", "123456"))
 
 browser.quit()
